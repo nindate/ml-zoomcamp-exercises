@@ -11,3 +11,7 @@ This repo has the exercises I did and any notes I took as part of this course.
 
 * Exercise and notes - [Learning Numpy](./learn-numpy.ipynb)
 * Exercise and notes - [Learning Pandas](./learn-pandas.ipynb)
+
+## Session #2
+
+* Exercise and notes - [Car Price prediction using Linear Regression](./car-price-prediction-linear-regression.ipynb)
