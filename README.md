@@ -15,3 +15,8 @@ This repo has the exercises I did and any notes I took as part of this course.
 ## Session #2
 
 * Exercise and notes - [Car Price prediction using Linear Regression](./car-price-prediction-linear-regression.ipynb)
+
+
+## Session #3
+
+* Exercise and notes - [Churn prediction using Logistic Regression for Classification](./car-price-prediction-linear-regression.ipynb)
