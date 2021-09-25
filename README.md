@@ -9,14 +9,15 @@ This repo has the exercises I did and any notes I took as part of this course.
 
 ## Session #1
 
-* Exercise and notes - [Learning Numpy](./week1-learn-numpy.ipynb)
-* Exercise and notes - [Learning Pandas](./week1-learn-pandas.ipynb)
+* [Learning Numpy](./week1-learn-numpy.ipynb)
+* [Learning Pandas](./week1-learn-pandas.ipynb)
 
 ## Session #2
 
-* Exercise and notes - [Car Price prediction using Linear Regression](./week2-car-price-prediction-linear-regression.ipynb)
+* [Car Price prediction using Linear Regression](./week2-car-price-prediction-linear-regression.ipynb)
 
 
 ## Session #3
 
-* Exercise and notes - [Churn prediction using Logistic Regression for Classification](./week3-churn-prediction-classification.ipynb)
+* [Churn prediction using Logistic Regression for Classification](./week3-churn-prediction-classification.ipynb)
+* [Explore more - Accuracy using all features Vs removing least important features](./week3_explore_more_1.ipynb)
