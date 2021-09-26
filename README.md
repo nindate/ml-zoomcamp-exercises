@@ -20,4 +20,5 @@ This repo has the exercises I did and any notes I took as part of this course.
 ## Session #3
 
 * [Churn prediction using Logistic Regression for Classification](./week3-churn-prediction-classification.ipynb)
-* [Explore more - Accuracy using all features Vs removing least important features](./week3_explore_more_1.ipynb)
+* [Explore more - Accuracy using all features Vs removing least important features](./week3-explore-more-1.ipynb)
+* [Explore more - Compare LinearRegression and RidgeRegression for car price data. Test different regularization values for RidgeRegression](./week3-explore-more-2.ipynb)
