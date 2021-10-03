@@ -24,5 +24,5 @@ This repo has the exercises I did and any notes I took as part of this course.
 * [Explore more - Compare LinearRegression and RidgeRegression for car price data. Test different regularization values for RidgeRegression](./week3-explore-more-2.ipynb)
 
 ## Session #4
-* [Evaluation metrics for Classification[(./week4-evaluation-metrics.ipynb)
+* [Evaluation metrics for Classification](./week4-evaluation-metrics.ipynb)
 * [Explore more - Precision and Recall for dummy model, Precision, Recall for different thresholds and more](./week4-explore-more-1.ipynb)
