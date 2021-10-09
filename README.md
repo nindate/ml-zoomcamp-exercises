@@ -26,3 +26,7 @@ This repo has the exercises I did and any notes I took as part of this course.
 ## Session #4
 * [Evaluation metrics for Classification](./week4/week4-evaluation-metrics.ipynb)
 * [Explore more - Precision and Recall for dummy model, Precision, Recall for different thresholds and more](./week4/week4-explore-more-1.ipynb)
+
+
+## Session #5
+* [Use PythonAnywhere to deploy your web service with ML model](how-to-use-pythonanywhere.md)
