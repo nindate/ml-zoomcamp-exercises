@@ -98,7 +98,7 @@ To view/edit the default code, go to Files and navigate to the appropriate file 
 
 #### 4. Upload ML model files (if/as applicable)
 
-**a.** Upload any ML model files (e.g. the dv.bin for the DictVectorizer and model1.bin for the LogisticRegression trained model - as per homework for ML Zoomcamp course Week#5)
+Upload any ML model files (e.g. the dv.bin for the DictVectorizer and model1.bin for the LogisticRegression trained model - as per homework for ML Zoomcamp course Week#5)
 
 Click on **Files**, go to the path where the python code for ther web has been deployed (in this example - mysite), click **Upload a file** and upload your model file(s) as applicable.
 
