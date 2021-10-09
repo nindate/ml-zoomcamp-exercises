@@ -51,6 +51,7 @@ The upgraded packages roughly takes some 110+ MB
     
 ![File quota after package upgrade](images/8-file-quota-after-scikit-learn-upgrade.png)
     
+
 #### 3. Create/Deploy your Web App
  
 **a.** Now you can create your Webapp (The free account allows deploying a single webapp). Click on **Web**, then click **+ Add a new web app**
@@ -94,11 +95,20 @@ To view/edit the default code, go to Files and navigate to the appropriate file 
 ![Custom webapp code](images/20-web-app-13.png)
  
 **h.** Click ![reload](images/21-reload-web-app-14.png) to reload the web app from the code you updated and saved.
- 
-#### 4. Test your Web App
+
+#### 4. Upload ML model files (if/as applicable)
+
+**a.** Upload any ML model files (e.g. the dv.bin for the DictVectorizer and model2.bin for the LogisticRegression trained model - as per homework for ML Zoomcamp course Week#5)
+
+Click on **Files**, go to the path where the python code for ther web has been deployed (in this example - mysite), click **Upload a file** and upload your model file(s) as applicable.
+
+![Upload model files](images/9-upload-model-files.png)
+
+#### 5. Test your Web App
  
 You can now test whether your Web App is running successfully (now being hosted on PythonAnywhere). From your local machine (or from anywhere, where you have python installed, requests package installed and having internet access) execute the code to test your Web App.
  
 Below is sample test scenario for the homework of Week5 of ML Zoomcamp course.
  
 ![Test webapp](images/22-request.png)
+
