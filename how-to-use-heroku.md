@@ -41,7 +41,7 @@ To install from tarball, go to https://devcenter.heroku.com/articles/heroku-cli#
 
 Extract the tarball (Step fo Ubuntu shown below. For Windows simply use the WinZip or equivalent to extract/unzip from tarball).
 
-![Extract tarball1](images/5-heroku-extract-tarball.png)
+![Extract tarball1](images/5-heroku-extract-tarball-ubuntu-1.png)
 
 ![Extract tarball2](images/6-heroku-extract-tarball-ubuntu-2.png)
 
@@ -155,4 +155,4 @@ You can now test whether your Web App is running successfully (now being hosted 
 
 Below is sample test scenario for the homework of Week5 of ML Zoomcamp course.
   
-![Test Web app](images/24-request-17.png)
+![Test Web app](images/24-request.png)
