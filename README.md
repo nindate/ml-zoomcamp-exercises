@@ -30,3 +30,4 @@ This repo has the exercises I did and any notes I took as part of this course.
 
 ## Session #5
 * [Use PythonAnywhere to deploy your web service with ML model](how-to-use-pythonanywhere.md)
+* [Use Heroku to deploy your web service with ML model](how-to-use-heroku.md)
