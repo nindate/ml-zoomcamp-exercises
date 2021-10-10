@@ -97,7 +97,7 @@ e.g. I used ```web: gunicorn w5-hw-svc-predict:app``` since my python file name 
   
 ![Procfile](images/13-heroku-webapp-deploy-6.png)
   
-*Find more info on Procfile ![here](https://devcenter.heroku.com/articles/procfile)*
+*Find more info on Procfile [here](https://devcenter.heroku.com/articles/procfile)*
   
 **c. Deploy web app to Heroku**
 
@@ -115,23 +115,23 @@ Add all the contents of the directory to git repo
   
 Commit changes to local git repo
   
-```git commit -m "some commit message"
+```git commit -m "some commit message"```
   
-![initial local git repo](images/14-heroku-webapp-deploy-7.png)
+![initial local git repo1](images/14-heroku-webapp-deploy-7.png)
 
 **Login to heroku** : Using heroku cli, login to heroku [In step 2.c. above the path has already been set]. Verify heroku command is found in the path then login. Press any key when asked to do so.
 
-![initial local git repo1](images/15-heroku-webapp-deploy-8.png)
+![initial local git repo2](images/15-heroku-webapp-deploy-8.png)
   
 This will open a tab in your web browser asking you to login to Heroku. Login to Heroku.
 
-![initial local git repo2](images/16-heroku-webapp-deploy-9.png)
+![initial local git repo3](images/16-heroku-webapp-deploy-9.png)
 
-![initial local git repo3](images/17-heroku-webapp-deploy-10.png)
+![initial local git repo4](images/17-heroku-webapp-deploy-10.png)
 
 Now you can close this tab and return to the command prompt on your terminal
   
-![initial local git repo4](images/18-heroku-webapp-deploy-11.png)
+![initial local git repo5](images/18-heroku-webapp-deploy-11.png)
   
 **Create an application** : You need to create a new application in Heroku before deploying the code to it. Create an application
   
@@ -156,3 +156,4 @@ You can now test whether your Web App is running successfully (now being hosted 
 Below is sample test scenario for the homework of Week5 of ML Zoomcamp course.
   
 ![Test Web app](images/24-request.png)
+
