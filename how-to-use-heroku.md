@@ -5,7 +5,7 @@ In the Machine Learning Zoomcamp course conducted by Alexey Grigorev (https://gi
 
 For this, participants can either deploy the web service locally on their machine, inside a docker container on their machine, or in Cloud (AWS, Azure. Google etc.).
 
-There was one more option that was suggested, which is to use Heroku to host python based web application for free. This options will especially be useful when working on the Project 1 as part of this course, and hence I thought of exploring this option and preparing this reference for others to follow if they wish to use this option.
+There was one more option that was suggested, which is to use Heroku to host python based web application for free. This option will especially be useful when working on the Project 1 as part of this course, and hence I thought of exploring this option and preparing this reference for others to follow if they wish to use this option.
 
 Following are the steps to use Heroku. These have been explained with an example web app that was used for the homework of week5 of the course.
 
@@ -15,9 +15,9 @@ Following are the steps to use Heroku. These have been explained with an example
 
 Go to https://www.heroku.com/ and Signup
 
-![Signup](images/1-heroku-signup-1.png)
+![Signup1](images/1-heroku-signup-1.png)
 
-![Signup](images/2-heroku-signup-2.png)
+![Signup2](images/2-heroku-signup-2.png)
 
 You can also setup Google authenticator app on your mobile to get a token (OTP) and use it for Multi-factor authentication when logging in to Heroku.
 
@@ -41,9 +41,9 @@ To install from tarball, go to https://devcenter.heroku.com/articles/heroku-cli#
 
 Extract the tarball (Step fo Ubuntu shown below. For Windows simply use the WinZip or equivalent to extract/unzip from tarball).
 
-![Extract tarball](images/5-heroku-extract-tarball.png)
+![Extract tarball1](images/5-heroku-extract-tarball.png)
 
-![Extract tarball](images/6-heroku-extract-tarball-ubuntu-2.png)
+![Extract tarball2](images/6-heroku-extract-tarball-ubuntu-2.png)
 
 **c. Add heroku/bin to your PATH**
 
@@ -121,17 +121,17 @@ Commit changes to local git repo
 
 **Login to heroku** : Using heroku cli, login to heroku [In step 2.c. above the path has already been set]. Verify heroku command is found in the path then login. Press any key when asked to do so.
 
-![initial local git repo](images/15-heroku-webapp-deploy-8.png)
+![initial local git repo1](images/15-heroku-webapp-deploy-8.png)
   
 This will open a tab in your web browser asking you to login to Heroku. Login to Heroku.
 
-![initial local git repo](images/16-heroku-webapp-deploy-9.png)
+![initial local git repo2](images/16-heroku-webapp-deploy-9.png)
 
-![initial local git repo](images/17-heroku-webapp-deploy-10.png)
+![initial local git repo3](images/17-heroku-webapp-deploy-10.png)
 
 Now you can close this tab and return to the command prompt on your terminal
   
-![initial local git repo](images/18-heroku-webapp-deploy-11.png)
+![initial local git repo4](images/18-heroku-webapp-deploy-11.png)
   
 **Create an application** : You need to create a new application in Heroku before deploying the code to it. Create an application
   
@@ -141,13 +141,13 @@ This creates an application and also a Heroku git repo for this application. You
   
 ![Application](images/20-heroku-webapp-deploy-13.png)
   
-![Default web page](images/21-heroku-webapp-deploy-14.png)
+![Default web page1](images/21-heroku-webapp-deploy-14.png)
 
 **Push code and configurations to Heroku git for deployment** : You can now push to remote git (Heroku git). Once the contents are pushed to Heroku git, it automatically triggers the deployment.
   
-![Default web page](images/22-heroku-webapp-deploy-15.png)
+![Default web page2](images/22-heroku-webapp-deploy-15.png)
   
-![Default web page](images/23-heroku-webapp-deploy-16.png)
+![Default web page3](images/23-heroku-webapp-deploy-16.png)
 
 #### 4. Test your Web App  
 
