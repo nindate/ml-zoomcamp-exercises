@@ -1,0 +1,544 @@
+,algo,desc,score,diff
+0,logisticregression,all features including duration,0.9282793437622984,
+1,logisticregression,baseline score. all features excluding duration,0.7695207195739867,0.0
+2,logisticregression,"deleted features 'loan','housing','day_of_week','marital'",0.7695122644874066,-8.45508658009475e-06
+3,logisticregression,deleted feature age,0.767437155647383,-0.002083563926603693
+4,logisticregression,deleted feature job,0.770209347943723,0.0006886283697362661
+5,logisticregression,deleted feature marital,0.7685978084415584,-0.0009229111324282613
+6,logisticregression,deleted feature education,0.7705184966548602,0.000997777080873452
+7,logisticregression,deleted feature default,0.7683679069510035,-0.0011528126229831681
+8,logisticregression,deleted feature housing,0.7695047317739079,-1.5987800078831604e-05
+9,logisticregression,deleted feature loan,0.7694789053276269,-4.1814246359850316e-05
+10,logisticregression,deleted feature contact,0.7720225796930342,0.0025018601190475165
+11,logisticregression,deleted feature month,0.7465722310360094,-0.022948488537977263
+12,logisticregression,deleted feature day_of_week,0.7705470133559622,0.0010262937819754958
+13,logisticregression,deleted feature campaign,0.7728630921635183,0.003342372589531628
+14,logisticregression,deleted feature pdays,0.7733605587121212,0.00383983913813446
+15,logisticregression,deleted feature previous,0.7695808275531286,6.010797914191013e-05
+16,logisticregression,deleted feature poutcome,0.7747534957939787,0.005232776219991964
+17,logisticregression,deleted feature emp.var.rate,0.7733481066755215,0.0038273871015347405
+18,logisticregression,deleted feature cons.price.idx,0.7725585553177883,0.0030378357438015646
+19,logisticregression,deleted feature cons.conf.idx,0.7746045325413223,0.005083812967335621
+20,logisticregression,deleted feature euribor3m,0.7740982265840219,0.004577507010035231
+21,logisticregression,deleted feature nr.employed,0.7710438649891775,0.0015231454151908297
+22,logisticregression,"deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+23,logisticregression,"deleted features 'housing','loan','previous','marital','education','day_of_week', 'euribor3m', 'poutcome'",0.7729959907516726,0.003475271177685868
+24,logisticregression,"deleted features 'housing','loan','previous','marital','education','day_of_week', 'euribor3m'",0.7732687057260921,0.003747986152105365
+25,logisticregression,"deleted features 'housing','loan','previous','marital','education','day_of_week', 'poutcome'",0.7719059763626525,0.002385256788665746
+26,logisticregression,"using neg_drop_features 'housing', 'loan', 'marital', 'default', 'age', 'month'",0.6930386197609208,-0.07648209981306586
+27,logisticregression,"using pos_drop_features 'euribor3m', 'poutcome', 'cons.conf.idx', 'job', 'pdays', 'emp.var.rate', 'campaign', 'cons.price.idx', 'contact', 'nr.employed', 'day_of_week', 'education', 'previous'",0.7449260256788666,-0.024594693895120145
+28,logisticregression,"dropping pos_drop_features 'euribor3m', 'poutcome', 'cons.conf.idx', 'job', 'pdays', 'emp.var.rate', 'campaign', 'cons.price.idx', 'contact', 'nr.employed', 'day_of_week', 'education', 'previous'",0.6930386197609208,-0.07648209981306586
+29,logisticregression,"dropping 'euribor3m', 'poutcome'",0.7713501697166469,0.0018294501426602272
+30,logisticregression,max_iters=10.0,0.6555472285763478,-0.11397349099763887
+31,logisticregression,max_iters=20.0,0.7695177987258953,-2.9208480913922585e-06
+32,logisticregression,max_iters=30.0,0.7695207195739867,0.0
+33,logisticregression,max_iters=40.0,0.7695207195739867,0.0
+34,logisticregression,max_iters=50.0,0.7695207195739867,0.0
+35,logisticregression,max_iters=60.0,0.7695207195739867,0.0
+36,logisticregression,max_iters=70.0,0.7695207195739867,0.0
+37,logisticregression,max_iters=80.0,0.7695207195739867,0.0
+38,logisticregression,max_iters=90.0,0.7695207195739867,0.0
+39,logisticregression,max_iters=100.0,0.7695207195739867,0.0
+40,logisticregression,max_iters=110.0,0.7695207195739867,0.0
+41,logisticregression,max_iters=120.0,0.7695207195739867,0.0
+42,logisticregression,max_iters=130.0,0.7695207195739867,0.0
+43,logisticregression,max_iters=140.0,0.7695207195739867,0.0
+44,logisticregression,max_iters=150.0,0.7695207195739867,0.0
+45,logisticregression,max_iters=160.0,0.7695207195739867,0.0
+46,logisticregression,max_iters=170.0,0.7695207195739867,0.0
+47,logisticregression,max_iters=180.0,0.7695207195739867,0.0
+48,logisticregression,max_iters=190.0,0.7695207195739867,0.0
+49,logisticregression,max_iters=200.0,0.7695207195739867,0.0
+50,logisticregression,"max_iters=30, C=100",0.769530250762495,9.531188508327126e-06
+51,logisticregression,"max_iters=30, C=50",0.7695184136412829,-2.30593270378332e-06
+52,logisticregression,"max_iters=30, C=20",0.7735939191017316,0.004073199527744875
+53,logisticregression,"max_iters=30, C=18",0.7695210270316805,3.0745769374895815e-07
+54,logisticregression,"max_iters=30, C=15",0.7695228717778434,2.1522038566867963e-06
+55,logisticregression,"max_iters=30, C=13",0.7695184136412829,-2.30593270378332e-06
+56,logisticregression,"max_iters=30, C=10",0.769514724148957,-5.995425029658996e-06
+57,logisticregression,"max_iters=30, C=1.0",0.7695207195739867,0.0
+58,logisticregression,"max_iters=30, C=0.1",0.769490742448839,-2.997712514773987e-05
+59,logisticregression,"max_iters=30, C=0.01",0.7739823918978749,0.004461672323888166
+60,logisticregression,"max_iters=30, C=0.001",0.7639091554752065,-0.005611564098780164
+61,logisticregression,"max_iters=30, C=0.0001",0.7429566822855175,-0.026564037288469233
+62,logisticregression,"max_iters=30, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+63,logisticregression,"max_iters=10.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751621839334907,0.005641464359503967
+64,logisticregression,"max_iters=10.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550974179702873,-0.1144233016036994
+65,logisticregression,"max_iters=10.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751621839334908,0.005641464359504078
+66,logisticregression,"max_iters=10.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550974179702873,-0.1144233016036994
+67,logisticregression,"max_iters=10.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751531139315231,0.005632394357536374
+68,logisticregression,"max_iters=10.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550973411058638,-0.1144233784681229
+69,logisticregression,"max_iters=10.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751520378295946,0.00563131825560792
+70,logisticregression,"max_iters=10.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550977254279811,-0.11442299414600565
+71,logisticregression,"max_iters=10.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751512691853601,0.005630549611373437
+72,logisticregression,"max_iters=10.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550976485635577,-0.11442307101042903
+73,logisticregression,"max_iters=10.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751500393545847,0.005629319780597997
+74,logisticregression,"max_iters=10.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550975716991342,-0.11442314787485253
+75,logisticregression,"max_iters=10.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751337440968123,0.005613024522825638
+76,logisticregression,"max_iters=10.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550976485635578,-0.11442307101042892
+77,logisticregression,"max_iters=10.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7749065328610782,0.005385813287091534
+78,logisticregression,"max_iters=10.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550976485635577,-0.11442307101042903
+79,logisticregression,"max_iters=10.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7734612511068477,0.0039405315328610024
+80,logisticregression,"max_iters=10.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550981097500985,-0.11442260982388819
+81,logisticregression,"max_iters=10.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7652099321133412,-0.004310787460645504
+82,logisticregression,"max_iters=10.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6550998007674145,-0.11442091880657224
+83,logisticregression,"max_iters=10.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7385766399793388,-0.030944079594647955
+84,logisticregression,"max_iters=10.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.655119478059819,-0.11440124151416775
+85,logisticregression,"max_iters=10.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696408586678477,-0.32255663370720195
+86,logisticregression,"max_iters=10.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.6552983415731995,-0.11422237800078716
+87,logisticregression,"max_iters=20.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7736826975108225,0.0041619779368358145
+88,logisticregression,"max_iters=20.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.77047845029024,0.0009577307162532689
+89,logisticregression,"max_iters=20.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7737115985340417,0.004190878960054989
+90,logisticregression,"max_iters=20.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7704899799537583,0.0009692603797716304
+91,logisticregression,"max_iters=20.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7737769332939788,0.004256213719992075
+92,logisticregression,"max_iters=20.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7704908254624163,0.0009701058884296065
+93,logisticregression,"max_iters=20.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7737029897186147,0.00418227014462802
+94,logisticregression,"max_iters=20.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7704857524104682,0.0009650328364815275
+95,logisticregression,"max_iters=20.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7737042964138134,0.00418357683982673
+96,logisticregression,"max_iters=20.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.770489749360488,0.0009690297865012631
+97,logisticregression,"max_iters=20.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7736672477617079,0.00414652818772121
+98,logisticregression,"max_iters=20.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7704874434277843,0.0009667238537975908
+99,logisticregression,"max_iters=20.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7736514136904762,0.004130694116489475
+100,logisticregression,"max_iters=20.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7515371347402597,-0.017983584833726973
+101,logisticregression,"max_iters=20.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7733606355765447,0.0038399160025579526
+102,logisticregression,"max_iters=20.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7704553140987801,0.0009345945247933862
+103,logisticregression,"max_iters=20.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7725773871015349,0.0030566675275481847
+104,logisticregression,"max_iters=20.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.770431178669815,0.0009104590958283199
+105,logisticregression,"max_iters=20.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7657358384986227,-0.0037848810753640105
+106,logisticregression,"max_iters=20.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7636832509346714,-0.005837468639315335
+107,logisticregression,"max_iters=20.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7370956162682014,-0.0324251033057853
+108,logisticregression,"max_iters=20.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611573322510823,-0.008363387322904425
+109,logisticregression,"max_iters=20.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+110,logisticregression,"max_iters=20.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+111,logisticregression,"max_iters=30.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7736999151416766,0.004179195567689864
+112,logisticregression,"max_iters=30.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+113,logisticregression,"max_iters=30.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7734796217040536,0.003958902130066888
+114,logisticregression,"max_iters=30.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+115,logisticregression,"max_iters=30.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7733332718417947,0.003812552267807967
+116,logisticregression,"max_iters=30.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+117,logisticregression,"max_iters=30.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7736605605568674,0.0041398409828806715
+118,logisticregression,"max_iters=30.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+119,logisticregression,"max_iters=30.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7736431891971665,0.0041224696231797475
+120,logisticregression,"max_iters=30.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+121,logisticregression,"max_iters=30.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7736547188606848,0.004133999286698109
+122,logisticregression,"max_iters=30.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+123,logisticregression,"max_iters=30.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.77397093909878,0.004450219524793297
+124,logisticregression,"max_iters=30.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+125,logisticregression,"max_iters=30.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7746587988242817,0.005138079250294969
+126,logisticregression,"max_iters=30.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+127,logisticregression,"max_iters=30.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.773517669593664,0.003996950019677259
+128,logisticregression,"max_iters=30.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+129,logisticregression,"max_iters=30.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7659088603158205,-0.0036118592581662057
+130,logisticregression,"max_iters=30.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+131,logisticregression,"max_iters=30.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+132,logisticregression,"max_iters=30.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+133,logisticregression,"max_iters=30.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+134,logisticregression,"max_iters=30.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+135,logisticregression,"max_iters=40.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7740972273465171,0.0045765077725303804
+136,logisticregression,"max_iters=40.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+137,logisticregression,"max_iters=40.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7739425761265251,0.00442185655253835
+138,logisticregression,"max_iters=40.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+139,logisticregression,"max_iters=40.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7738047582152695,0.004284038641282795
+140,logisticregression,"max_iters=40.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+141,logisticregression,"max_iters=40.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7739634063852814,0.004442686811294672
+142,logisticregression,"max_iters=40.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+143,logisticregression,"max_iters=40.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7739226682408501,0.004401948666863387
+144,logisticregression,"max_iters=40.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+145,logisticregression,"max_iters=40.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7742433466155056,0.004722627041518934
+146,logisticregression,"max_iters=40.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+147,logisticregression,"max_iters=40.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7745329717630854,0.0050122521890987315
+148,logisticregression,"max_iters=40.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+149,logisticregression,"max_iters=40.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7758891676505313,0.006368448076544575
+150,logisticregression,"max_iters=40.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+151,logisticregression,"max_iters=40.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7742786273858717,0.004757907811885009
+152,logisticregression,"max_iters=40.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+153,logisticregression,"max_iters=40.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7657364534140102,-0.0037842661599765126
+154,logisticregression,"max_iters=40.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+155,logisticregression,"max_iters=40.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+156,logisticregression,"max_iters=40.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+157,logisticregression,"max_iters=40.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+158,logisticregression,"max_iters=40.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+159,logisticregression,"max_iters=50.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7745861619441164,0.005065442370129736
+160,logisticregression,"max_iters=50.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+161,logisticregression,"max_iters=50.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7744966917552145,0.004975972181227806
+162,logisticregression,"max_iters=50.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+163,logisticregression,"max_iters=50.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7745088363341204,0.004988116760133665
+164,logisticregression,"max_iters=50.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+165,logisticregression,"max_iters=50.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7747129882428178,0.005192268668831046
+166,logisticregression,"max_iters=50.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+167,logisticregression,"max_iters=50.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7750375098386463,0.005516790264659566
+168,logisticregression,"max_iters=50.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+169,logisticregression,"max_iters=50.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751855507182212,0.005664831144234439
+170,logisticregression,"max_iters=50.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+171,logisticregression,"max_iters=50.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754341302636757,0.00591341068968898
+172,logisticregression,"max_iters=50.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+173,logisticregression,"max_iters=50.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7769010877853209,0.007380368211334143
+174,logisticregression,"max_iters=50.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+175,logisticregression,"max_iters=50.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7757459692296341,0.0062252496556474135
+176,logisticregression,"max_iters=50.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+177,logisticregression,"max_iters=50.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7656541316164895,-0.0038665879574971695
+178,logisticregression,"max_iters=50.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+179,logisticregression,"max_iters=50.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+180,logisticregression,"max_iters=50.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+181,logisticregression,"max_iters=50.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+182,logisticregression,"max_iters=50.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+183,logisticregression,"max_iters=60.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751395089285715,0.005618789354584819
+184,logisticregression,"max_iters=60.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+185,logisticregression,"max_iters=60.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7751267494342777,0.0056060298602910175
+186,logisticregression,"max_iters=60.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+187,logisticregression,"max_iters=60.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.775481632477371,0.005960912903384297
+188,logisticregression,"max_iters=60.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+189,logisticregression,"max_iters=60.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7752366655598188,0.005715945985832138
+190,logisticregression,"max_iters=60.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+191,logisticregression,"max_iters=60.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7757721031336089,0.006251383559622181
+192,logisticregression,"max_iters=60.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+193,logisticregression,"max_iters=60.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.775845201200315,0.00632448162632826
+194,logisticregression,"max_iters=60.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+195,logisticregression,"max_iters=60.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761641885576545,0.006643468983667744
+196,logisticregression,"max_iters=60.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+197,logisticregression,"max_iters=60.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7777638909386068,0.00824317136462005
+198,logisticregression,"max_iters=60.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+199,logisticregression,"max_iters=60.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7766721086678474,0.007151389093860705
+200,logisticregression,"max_iters=60.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+201,logisticregression,"max_iters=60.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7655218479437229,-0.0039988716302638005
+202,logisticregression,"max_iters=60.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+203,logisticregression,"max_iters=60.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+204,logisticregression,"max_iters=60.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+205,logisticregression,"max_iters=60.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+206,logisticregression,"max_iters=60.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+207,logisticregression,"max_iters=70.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7757998511904762,0.0062791316164895195
+208,logisticregression,"max_iters=70.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+209,logisticregression,"max_iters=70.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7757607271989374,0.006240007624950694
+210,logisticregression,"max_iters=70.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+211,logisticregression,"max_iters=70.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760836346418734,0.006562915067886643
+212,logisticregression,"max_iters=70.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+213,logisticregression,"max_iters=70.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7762598079004328,0.0067390883264460966
+214,logisticregression,"max_iters=70.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+215,logisticregression,"max_iters=70.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7764044667453758,0.006883747171389065
+216,logisticregression,"max_iters=70.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+217,logisticregression,"max_iters=70.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7763700314836679,0.006849311909681188
+218,logisticregression,"max_iters=70.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+219,logisticregression,"max_iters=70.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.77683967311098,0.0073189535369933
+220,logisticregression,"max_iters=70.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+221,logisticregression,"max_iters=70.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.778424463793782,0.00890374421979534
+222,logisticregression,"max_iters=70.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+223,logisticregression,"max_iters=70.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7773864097550177,0.007865690181031004
+224,logisticregression,"max_iters=70.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+225,logisticregression,"max_iters=70.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7654221547865013,-0.0040985647874853814
+226,logisticregression,"max_iters=70.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+227,logisticregression,"max_iters=70.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+228,logisticregression,"max_iters=70.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+229,logisticregression,"max_iters=70.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+230,logisticregression,"max_iters=70.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+231,logisticregression,"max_iters=80.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7762619601042896,0.006741240530302894
+232,logisticregression,"max_iters=80.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+233,logisticregression,"max_iters=80.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7762419753541914,0.00672125578020466
+234,logisticregression,"max_iters=80.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+235,logisticregression,"max_iters=80.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7766928620621802,0.007172142488193534
+236,logisticregression,"max_iters=80.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+237,logisticregression,"max_iters=80.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7769766455135774,0.007455925939590657
+238,logisticregression,"max_iters=80.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+239,logisticregression,"max_iters=80.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.777126146817198,0.007605427243211338
+240,logisticregression,"max_iters=80.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+241,logisticregression,"max_iters=80.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7768080049685163,0.007287285394529608
+242,logisticregression,"max_iters=80.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+243,logisticregression,"max_iters=80.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7774073937426209,0.0078866741686342
+244,logisticregression,"max_iters=80.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+245,logisticregression,"max_iters=80.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7786749649498228,0.00915424537583609
+246,logisticregression,"max_iters=80.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+247,logisticregression,"max_iters=80.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7778144677292403,0.008293748155253633
+248,logisticregression,"max_iters=80.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+249,logisticregression,"max_iters=80.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7655867983815428,-0.0039339211924439565
+250,logisticregression,"max_iters=80.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+251,logisticregression,"max_iters=80.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+252,logisticregression,"max_iters=80.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+253,logisticregression,"max_iters=80.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+254,logisticregression,"max_iters=80.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+255,logisticregression,"max_iters=90.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7768405954840614,0.007319875910074658
+256,logisticregression,"max_iters=90.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+257,logisticregression,"max_iters=90.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7767166900334515,0.00719597045946474
+258,logisticregression,"max_iters=90.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+259,logisticregression,"max_iters=90.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7771512814836679,0.007630561909681144
+260,logisticregression,"max_iters=90.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+261,logisticregression,"max_iters=90.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7773135422815821,0.007792822707595404
+262,logisticregression,"max_iters=90.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+263,logisticregression,"max_iters=90.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7776284558244785,0.00810773625049177
+264,logisticregression,"max_iters=90.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+265,logisticregression,"max_iters=90.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7773075468565525,0.007786827282565745
+266,logisticregression,"max_iters=90.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+267,logisticregression,"max_iters=90.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7780070899744195,0.008486370400432763
+268,logisticregression,"max_iters=90.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+269,logisticregression,"max_iters=90.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7790186257870918,0.00949790621310509
+270,logisticregression,"max_iters=90.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+271,logisticregression,"max_iters=90.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7778000940820542,0.008279374508067483
+272,logisticregression,"max_iters=90.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+273,logisticregression,"max_iters=90.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7656715029761904,-0.0038492165977963566
+274,logisticregression,"max_iters=90.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+275,logisticregression,"max_iters=90.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+276,logisticregression,"max_iters=90.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+277,logisticregression,"max_iters=90.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+278,logisticregression,"max_iters=90.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+279,logisticregression,"max_iters=100.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7773998610291224,0.007879141455135685
+280,logisticregression,"max_iters=100.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+281,logisticregression,"max_iters=100.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7773717286501378,0.007851009076151105
+282,logisticregression,"max_iters=100.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+283,logisticregression,"max_iters=100.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7777526687327823,0.008231949158795548
+284,logisticregression,"max_iters=100.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+285,logisticregression,"max_iters=100.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7778289182408501,0.008308198666863387
+286,logisticregression,"max_iters=100.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+287,logisticregression,"max_iters=100.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779233077528532,0.008402588178866521
+288,logisticregression,"max_iters=100.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+289,logisticregression,"max_iters=100.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7778106245080677,0.008289904934080994
+290,logisticregression,"max_iters=100.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+291,logisticregression,"max_iters=100.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7783800361570248,0.008859316583038068
+292,logisticregression,"max_iters=100.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+293,logisticregression,"max_iters=100.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791619010724125,0.009641181498425744
+294,logisticregression,"max_iters=100.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+295,logisticregression,"max_iters=100.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.777812546118654,0.008291826544667313
+296,logisticregression,"max_iters=100.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+297,logisticregression,"max_iters=100.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7657346855322706,-0.0037860340417160687
+298,logisticregression,"max_iters=100.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+299,logisticregression,"max_iters=100.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+300,logisticregression,"max_iters=100.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+301,logisticregression,"max_iters=100.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+302,logisticregression,"max_iters=100.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+303,logisticregression,"max_iters=110.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7776666574429358,0.008145937868949127
+304,logisticregression,"max_iters=110.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+305,logisticregression,"max_iters=110.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7776239976879181,0.008103278113931411
+306,logisticregression,"max_iters=110.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+307,logisticregression,"max_iters=110.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7778835688459269,0.008362849271940198
+308,logisticregression,"max_iters=110.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+309,logisticregression,"max_iters=110.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7781328401711924,0.00861212059720573
+310,logisticregression,"max_iters=110.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+311,logisticregression,"max_iters=110.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7783638177636757,0.00884309818968898
+312,logisticregression,"max_iters=110.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+313,logisticregression,"max_iters=110.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7781339931375442,0.008613273563557455
+314,logisticregression,"max_iters=110.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+315,logisticregression,"max_iters=110.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7786597457939787,0.009139026219991964
+316,logisticregression,"max_iters=110.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+317,logisticregression,"max_iters=110.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+318,logisticregression,"max_iters=110.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+319,logisticregression,"max_iters=110.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7778426769726486,0.008321957398661928
+320,logisticregression,"max_iters=110.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+321,logisticregression,"max_iters=110.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7658708892906336,-0.003649830283353084
+322,logisticregression,"max_iters=110.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+323,logisticregression,"max_iters=110.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+324,logisticregression,"max_iters=110.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+325,logisticregression,"max_iters=110.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+326,logisticregression,"max_iters=110.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+327,logisticregression,"max_iters=120.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7780309179456908,0.00851019837170408
+328,logisticregression,"max_iters=120.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+329,logisticregression,"max_iters=120.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7780043228551751,0.008483603281188357
+330,logisticregression,"max_iters=120.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+331,logisticregression,"max_iters=120.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7782382981601732,0.008717578586186492
+332,logisticregression,"max_iters=120.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+333,logisticregression,"max_iters=120.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7783990216696184,0.008878302095631674
+334,logisticregression,"max_iters=120.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+335,logisticregression,"max_iters=120.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7786299992621015,0.009109279688114813
+336,logisticregression,"max_iters=120.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+337,logisticregression,"max_iters=120.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7783917195493899,0.008870999975403193
+338,logisticregression,"max_iters=120.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+339,logisticregression,"max_iters=120.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7788948740653285,0.009374154491341824
+340,logisticregression,"max_iters=120.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+341,logisticregression,"max_iters=120.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+342,logisticregression,"max_iters=120.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+343,logisticregression,"max_iters=120.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779000178325463,0.008379298258559542
+344,logisticregression,"max_iters=120.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+345,logisticregression,"max_iters=120.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7659092446379379,-0.003611474936048853
+346,logisticregression,"max_iters=120.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+347,logisticregression,"max_iters=120.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+348,logisticregression,"max_iters=120.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+349,logisticregression,"max_iters=120.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+350,logisticregression,"max_iters=120.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+351,logisticregression,"max_iters=130.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7783898748032271,0.008869155229240366
+352,logisticregression,"max_iters=130.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+353,logisticregression,"max_iters=130.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7783505202184179,0.008829800644431174
+354,logisticregression,"max_iters=130.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+355,logisticregression,"max_iters=130.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7783931031090122,0.008872383535025508
+356,logisticregression,"max_iters=130.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+357,logisticregression,"max_iters=130.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7785422200905154,0.009021500516528724
+358,logisticregression,"max_iters=130.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+359,logisticregression,"max_iters=130.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.779006865530303,0.00948614595631625
+360,logisticregression,"max_iters=130.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+361,logisticregression,"max_iters=130.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7785984848484848,0.009077765274498106
+362,logisticregression,"max_iters=130.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+363,logisticregression,"max_iters=130.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7790873425816608,0.00956662300767408
+364,logisticregression,"max_iters=130.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+365,logisticregression,"max_iters=130.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+366,logisticregression,"max_iters=130.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+367,logisticregression,"max_iters=130.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779132385133805,0.008392518939393745
+368,logisticregression,"max_iters=130.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+369,logisticregression,"max_iters=130.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7659494447314049,-0.0035712748425817953
+370,logisticregression,"max_iters=130.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+371,logisticregression,"max_iters=130.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+372,logisticregression,"max_iters=130.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+373,logisticregression,"max_iters=130.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+374,logisticregression,"max_iters=130.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+375,logisticregression,"max_iters=140.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7786504451987406,0.009129725624753893
+376,logisticregression,"max_iters=140.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+377,logisticregression,"max_iters=140.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7785795762003149,0.009058856626328216
+378,logisticregression,"max_iters=140.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+379,logisticregression,"max_iters=140.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7786203143447461,0.00909959477075939
+380,logisticregression,"max_iters=140.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+381,logisticregression,"max_iters=140.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.778782498278237,0.009261778704250268
+382,logisticregression,"max_iters=140.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+383,logisticregression,"max_iters=140.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.779099025974026,0.009578306400039316
+384,logisticregression,"max_iters=140.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+385,logisticregression,"max_iters=140.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7788832675373868,0.00936254796340008
+386,logisticregression,"max_iters=140.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+387,logisticregression,"max_iters=140.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792213941361669,0.009700674562180156
+388,logisticregression,"max_iters=140.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+389,logisticregression,"max_iters=140.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+390,logisticregression,"max_iters=140.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+391,logisticregression,"max_iters=140.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779132385133805,0.008392518939393745
+392,logisticregression,"max_iters=140.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+393,logisticregression,"max_iters=140.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7659554401564344,-0.0035652794175523583
+394,logisticregression,"max_iters=140.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+395,logisticregression,"max_iters=140.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+396,logisticregression,"max_iters=140.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+397,logisticregression,"max_iters=140.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+398,logisticregression,"max_iters=140.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+399,logisticregression,"max_iters=150.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7788956427095632,0.00937492313557653
+400,logisticregression,"max_iters=150.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+401,logisticregression,"max_iters=150.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7788541359208974,0.00933341634691065
+402,logisticregression,"max_iters=150.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+403,logisticregression,"max_iters=150.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7788708923652107,0.009350172791223965
+404,logisticregression,"max_iters=150.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+405,logisticregression,"max_iters=150.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7790021768004722,0.009481457226485523
+406,logisticregression,"max_iters=150.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+407,logisticregression,"max_iters=150.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791477580184967,0.009627038444509961
+408,logisticregression,"max_iters=150.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+409,logisticregression,"max_iters=150.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7790305397727273,0.009509820198740582
+410,logisticregression,"max_iters=150.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+411,logisticregression,"max_iters=150.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.779296721271153,0.009776001697166303
+412,logisticregression,"max_iters=150.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+413,logisticregression,"max_iters=150.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+414,logisticregression,"max_iters=150.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+415,logisticregression,"max_iters=150.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779132385133805,0.008392518939393745
+416,logisticregression,"max_iters=150.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+417,logisticregression,"max_iters=150.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7659437567640692,-0.0035769628099174833
+418,logisticregression,"max_iters=150.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+419,logisticregression,"max_iters=150.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+420,logisticregression,"max_iters=150.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+421,logisticregression,"max_iters=150.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+422,logisticregression,"max_iters=150.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+423,logisticregression,"max_iters=160.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7790495252853208,0.009528805711334076
+424,logisticregression,"max_iters=160.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+425,logisticregression,"max_iters=160.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7789705086580087,0.009449789084021942
+426,logisticregression,"max_iters=160.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+427,logisticregression,"max_iters=160.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7790569042699724,0.009536184695985717
+428,logisticregression,"max_iters=160.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+429,logisticregression,"max_iters=160.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7790984879230618,0.009577768349075089
+430,logisticregression,"max_iters=160.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+431,logisticregression,"max_iters=160.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792104793880361,0.009689759814049403
+432,logisticregression,"max_iters=160.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+433,logisticregression,"max_iters=160.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791097869933097,0.009589067419322972
+434,logisticregression,"max_iters=160.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+435,logisticregression,"max_iters=160.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7793541389954742,0.009833419421487521
+436,logisticregression,"max_iters=160.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+437,logisticregression,"max_iters=160.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+438,logisticregression,"max_iters=160.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+439,logisticregression,"max_iters=160.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779132385133805,0.008392518939393745
+440,logisticregression,"max_iters=160.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+441,logisticregression,"max_iters=160.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7658826495474224,-0.003638070026564355
+442,logisticregression,"max_iters=160.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+443,logisticregression,"max_iters=160.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+444,logisticregression,"max_iters=160.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+445,logisticregression,"max_iters=160.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+446,logisticregression,"max_iters=160.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+447,logisticregression,"max_iters=170.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791120929260134,0.009591373352026644
+448,logisticregression,"max_iters=170.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+449,logisticregression,"max_iters=170.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7790733532565919,0.009552633682605172
+450,logisticregression,"max_iters=170.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+451,logisticregression,"max_iters=170.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791622085301062,0.009641488956119493
+452,logisticregression,"max_iters=170.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+453,logisticregression,"max_iters=170.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791763515840221,0.009655632010035387
+454,logisticregression,"max_iters=170.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+455,logisticregression,"max_iters=170.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792533697363243,0.009732650162337597
+456,logisticregression,"max_iters=170.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+457,logisticregression,"max_iters=170.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.779186651416765,0.009665931842778308
+458,logisticregression,"max_iters=170.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+459,logisticregression,"max_iters=170.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7793145538173947,0.009793834243407962
+460,logisticregression,"max_iters=170.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+461,logisticregression,"max_iters=170.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+462,logisticregression,"max_iters=170.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+463,logisticregression,"max_iters=170.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779132385133805,0.008392518939393745
+464,logisticregression,"max_iters=170.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+465,logisticregression,"max_iters=170.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7658406815722156,-0.00368003800177108
+466,logisticregression,"max_iters=170.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+467,logisticregression,"max_iters=170.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+468,logisticregression,"max_iters=170.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+469,logisticregression,"max_iters=170.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+470,logisticregression,"max_iters=170.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+471,logisticregression,"max_iters=180.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791325388626524,0.009611819288665724
+472,logisticregression,"max_iters=180.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+473,logisticregression,"max_iters=180.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791263897087761,0.009605670134789412
+474,logisticregression,"max_iters=180.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+475,logisticregression,"max_iters=180.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791999489620228,0.009679229388036115
+476,logisticregression,"max_iters=180.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+477,logisticregression,"max_iters=180.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792539846517119,0.009733265077725206
+478,logisticregression,"max_iters=180.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+479,logisticregression,"max_iters=180.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792533697363243,0.009732650162337597
+480,logisticregression,"max_iters=180.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+481,logisticregression,"max_iters=180.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792343073593073,0.00971358778532061
+482,logisticregression,"max_iters=180.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+483,logisticregression,"max_iters=180.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792296954939,0.009708975919913265
+484,logisticregression,"max_iters=180.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+485,logisticregression,"max_iters=180.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+486,logisticregression,"max_iters=180.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+487,logisticregression,"max_iters=180.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779132385133805,0.008392518939393745
+488,logisticregression,"max_iters=180.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+489,logisticregression,"max_iters=180.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7657359922274696,-0.003784727346517136
+490,logisticregression,"max_iters=180.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+491,logisticregression,"max_iters=180.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+492,logisticregression,"max_iters=180.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+493,logisticregression,"max_iters=180.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+494,logisticregression,"max_iters=180.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+495,logisticregression,"max_iters=190.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791612861570247,0.009640566583038024
+496,logisticregression,"max_iters=190.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+497,logisticregression,"max_iters=190.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7791468356454152,0.009626116071428492
+498,logisticregression,"max_iters=190.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+499,logisticregression,"max_iters=190.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.779267666519087,0.009746946945100254
+500,logisticregression,"max_iters=190.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+501,logisticregression,"max_iters=190.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792947996605668,0.009774080086580095
+502,logisticregression,"max_iters=190.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+503,logisticregression,"max_iters=190.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792533697363243,0.009732650162337597
+504,logisticregression,"max_iters=190.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+505,logisticregression,"max_iters=190.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792763521989374,0.009755632624950716
+506,logisticregression,"max_iters=190.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+507,logisticregression,"max_iters=190.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.779173123278237,0.009652403704250245
+508,logisticregression,"max_iters=190.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+509,logisticregression,"max_iters=190.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+510,logisticregression,"max_iters=190.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+511,logisticregression,"max_iters=190.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779132385133805,0.008392518939393745
+512,logisticregression,"max_iters=190.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+513,logisticregression,"max_iters=190.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7657053233225108,-0.0038153962514758666
+514,logisticregression,"max_iters=190.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+515,logisticregression,"max_iters=190.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+516,logisticregression,"max_iters=190.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+517,logisticregression,"max_iters=190.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+518,logisticregression,"max_iters=190.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
+519,logisticregression,"max_iters=200.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.779233077528532,0.009712357954545281
+520,logisticregression,"max_iters=200.0, C=100 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761827897481306,0.006662070174143886
+521,logisticregression,"max_iters=200.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792071742178276,0.00968645464384088
+522,logisticregression,"max_iters=200.0, C=50 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761755644923258,0.00665484491833912
+523,logisticregression,"max_iters=200.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7793175515299094,0.009796831955922736
+524,logisticregression,"max_iters=200.0, C=20 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761758719500197,0.00665515237603298
+525,logisticregression,"max_iters=200.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7793007182211729,0.00977999864718615
+526,logisticregression,"max_iters=200.0, C=18 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761732585596222,0.006652538985635448
+527,logisticregression,"max_iters=200.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792533697363243,0.009732650162337597
+528,logisticregression,"max_iters=200.0, C=15 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761763331365604,0.0066556135625737145
+529,logisticregression,"max_iters=200.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7793187044962613,0.009797984922274572
+530,logisticregression,"max_iters=200.0, C=13 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761769480519481,0.0066562284779614345
+531,logisticregression,"max_iters=200.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.77915406090122,0.009633341327233258
+532,logisticregression,"max_iters=200.0, C=10 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7760772548947265,0.0065565353207397425
+533,logisticregression,"max_iters=200.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7792243149842583,0.009703595410271548
+534,logisticregression,"max_iters=200.0, C=1.0 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761744883903975,0.006653768816410777
+535,logisticregression,"max_iters=200.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7779132385133805,0.008392518939393745
+536,logisticregression,"max_iters=200.0, C=0.1 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7761898612750885,0.006669141701101777
+537,logisticregression,"max_iters=200.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7656362990702479,-0.003884420503738828
+538,logisticregression,"max_iters=200.0, C=0.01 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7754611865407319,0.005940466966745217
+539,logisticregression,"max_iters=200.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.737010450487013,-0.03251026908697374
+540,logisticregression,"max_iters=200.0, C=0.001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.7611606374212909,-0.008360082152695791
+541,logisticregression,"max_iters=200.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.44696669925718224,-0.32255402031680447
+542,logisticregression,"max_iters=200.0, C=0.0001 and deleted features 'housing','loan','previous','marital','education','day_of_week'",0.743846234258166,-0.025674485315820728
