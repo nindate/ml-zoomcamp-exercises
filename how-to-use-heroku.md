@@ -262,7 +262,7 @@ This creates an application and also a Heroku git repo for this application. You
   
 ![Default web page3](images/23-heroku-webapp-deploy-16.png)
 
-**Test your Web App  **
+**Test your Web App**
 
 You can now test whether your Web App is running successfully (now being hosted on Heroku). From your local machine (or from anywhere, where you have python installed, requests package installed and having internet access) execute the code to test your Web App.
 
