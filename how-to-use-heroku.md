@@ -8,7 +8,6 @@
 * [3. Deploy your Web app to Heroku](#deploy-app)
   * [3.1 Deploy as a docker container to Heroku](#deploy-app-docker)
   * [3.2 Deploy without docker container to Heroku](#deploy-app-nodocker)
-* [4. Test your Web app](#test-app)
 
 ----
 
@@ -28,8 +27,8 @@ Following are the steps to use Heroku. These have been explained with an example
 ----
 <a id='preparation'></a>
 [back to TOC](#toc)
-### 1. Preparation
-#### 1.1 Create account in Heroku
+### 2. Preparation
+#### 2.1 Create account in Heroku
 
 Go to https://www.heroku.com/ and Signup
 
@@ -43,7 +42,7 @@ Once logged in, you can deploy web app in any of the languages - Python, Ruby, P
 
 ![Heroku dashboard](images/3-heroku-dashboard.png)
 
-#### 1.2. Install Heroku command line interface (cli) on your machine
+#### 2.2. Install Heroku command line interface (cli) on your machine
 
 There are multiple ways to deploy a web app on Heroku (via the Heroku Dashboard, using CLI from your machine), of which I used the CLI option.
 
@@ -84,9 +83,74 @@ You can then follow the below simple steps to deploy to heroku as a docker conta
 
 **a. Prepare code base for docker deployment**
 
+Create a directory for your deployment and copy your code for the Web app, any ML model files (if/as appropriate), python package dependencies (this example shows use of pipenv and hence Pipfile and Pipfile.lock, however you can requirements.txt or files as applicable for you)
+
+![Create directory and copy code](images/hd-1-code-base.png)
+
 **b. Create Dockerfile**
 
-**c. Deploy to Heroku**
+Create Dockerfile (filename should be exactly this) in the same directory with appropriate lines for your docker image.
+
+Below example shows, python:3.8.12-slim being used as base image, installing pipenv, then copying the Pipfile and Pipfile.lock that specify python dependency packages, installing the dependency packages using pipenv, then copying the python code for the web app, followed by defining port to be exposed and entrypoint command that should get run when docker container starts.
+
+![Create Dockerfile](images/hd-2-dockerfile.png)
+
+**c. Deploy to Heroku as docker container**
+
+Run the following steps in sequence to deploy your web app as a docker container to Heroku.
+
+**Login to heroku** : Verify heroku command is found (In step 2.2.c. above the path has already been set) in the path. Then using heroku cli, login to heroku.  Press any key when asked to do so.
+
+```which heroku```
+
+```heroku login```
+
+![initial local git repo2](images/15-heroku-webapp-deploy-8.png)
+  
+This will open a tab in your web browser asking you to login to Heroku. Login to Heroku.
+
+![initial local git repo3](images/16-heroku-webapp-deploy-9.png)
+
+![initial local git repo4](images/17-heroku-webapp-deploy-10.png)
+
+Now you can close this tab and return to the command prompt on your terminal
+  
+![initial local git repo5](images/18-heroku-webapp-deploy-11.png)
+
+**Login to Heroku container**  : Login to Heroku container registry.
+
+```heroku container:login```
+
+![Login to Heroku container](images/hd-3-heroku-container-login.png)
+
+**Create app in Heroku**: Create an app in Heroku. Below example shows creating a app with the name ml-zoom-docker.
+
+```heroku create ml-zoom-docker```
+
+![Create app in Heroku](images/hd-4-create-app.png)
+
+**Push docker image to Heroku**: Push docker image to Heroku container registry. When you run the below command, the Dockerfile will be used to build the docker image locally on your machine and then push the image to Heroku container registry. Using the -a flag you specify the application name (e.g. ml-zoom-docker app that you created above).
+
+```heroku container:push web -a ml-zoom-docker```
+
+![Push docker image to Heroku](images/hd-5-push-container-1.png)
+
+![](images/hd-5-push-container-2.png)
+
+**Release container**: Deploy container on Heroku. When you run the below command, a docker container will be launched in Heroku from the docker image that you pushed to Heroku container registry.
+
+```heroku container:release web -a ml-zoom-docker```
+
+![Deploy container](images/hd-6-container-release.png)
+
+**Launch you app**: Open your web app. For this you can either go to Heroku Dashboard in your web browser, go to the app and click **Open app**, or on your machine you can execute the below command, which will open a tab in your web browser with the URL of your application.
+
+```heroku open -a ml-zoom-docker```
+
+![Launch app](images/hd-7-launch-app.png)
+
+**Great !!!** You web app is now running in Heroku as a docker container !!!
+
 
 [back to TOC](#toc)
 <a id='deploy-app-nodocker'></a>
@@ -125,11 +189,11 @@ You could choose to use the command ```pip freeze > requirement.txt``` to popula
 
 The command for this example would be as below. 
 
-web: gunicorn <name of your python script without the .py>:<instance name of Flask>
+web: gunicorn \<name of your python script without the .py\>:\<instance name of Flask\>
 
 * web: indicates that the web server process can receive external HTTP traffic from Heroku’s routers.
 * gunicorn is the web server (software) that will be used
-* app is the instance name of Flask when you define something like **app** = Flask(somename_foryourapp)
+* app is the instance name of Flask when you define something like **app = Flask(somename_foryourapp)**
 
 e.g. I used ```web: gunicorn w5-hw-svc-predict:app``` since my python file name is w5-hw-svc-predict.py and I have defined Flask instance as ```app = Flask('churn')```
   
@@ -157,7 +221,11 @@ Commit changes to local git repo
   
 ![initial local git repo1](images/14-heroku-webapp-deploy-7.png)
 
-**Login to heroku** : Using heroku cli, login to heroku (In step 2.c. above the path has already been set). Verify heroku command is found in the path then login. Press any key when asked to do so.
+**Login to heroku** : Verify heroku command is found (In step 2.2.c. above the path has already been set) in the path. Then using heroku cli, login to heroku.  Press any key when asked to do so.
+
+```which heroku```
+
+```heroku login```
 
 ![initial local git repo2](images/15-heroku-webapp-deploy-8.png)
   
@@ -187,10 +255,7 @@ This creates an application and also a Heroku git repo for this application. You
   
 ![Default web page3](images/23-heroku-webapp-deploy-16.png)
 
-----
-[back to TOC](#toc)
-<a id='test-app'></a>
-### 4. Test your Web App  
+**Test your Web App  **
 
 You can now test whether your Web App is running successfully (now being hosted on Heroku). From your local machine (or from anywhere, where you have python installed, requests package installed and having internet access) execute the code to test your Web App.
 
