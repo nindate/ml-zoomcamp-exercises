@@ -143,9 +143,7 @@ Now you can close this tab and return to the command prompt on your terminal
 
 ![Deploy container](images/hd-6-container-release.png)
 
-**Launch you app**: Open your web app. For this you can either go to Heroku Dashboard in your web browser, go to the app and click **Open app**, or on your machine you can execute the below command, which will open a tab in your web browser with the URL of your application.
-
-```heroku open -a ml-zoom-docker```
+**Launch you app**: Open your web app. For this you can go your web browser and open your application URL with appropriate path (e.g. my sample application would run at https://ml-zoom-docker.herokuapp.com/welcome - since ml-zoom-docker is the name of my app and I am serving page /welcome via my sample app)
 
 ![Launch app](images/hd-7-launch-app.png)
 
