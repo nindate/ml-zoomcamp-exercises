@@ -149,6 +149,7 @@ Now you can close this tab and return to the command prompt on your terminal
 
 **Great !!!** You web app is now running in Heroku as a docker container !!!
 
+---
 
 [back to TOC](#toc)
 <a id='deploy-app-nodocker'></a>
