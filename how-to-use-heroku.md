@@ -93,6 +93,14 @@ Create Dockerfile (filename should be exactly this) in the same directory with a
 
 Below example shows, python:3.8.12-slim being used as base image, installing pipenv, then copying the Pipfile and Pipfile.lock that specify python dependency packages, installing the dependency packages using pipenv, then copying the python code for the web app, followed by defining port to be exposed and entrypoint command that should get run when docker container starts.
 
+**Note:** One very important point I struggled and understood after a long time is that for gunicorn do not use anything like 
+
+```ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:9696", "sample_app:app"]```
+
+Although using like this worked when running docker container locally on my machine, however failed when deployed to Heroku. Will try to investigate further and update once I know better. Meantime use something like
+
+```ENTRYPOINT ["gunicorn", "sample_app:app"]```
+
 ![Create Dockerfile](images/hd-2-dockerfile.png)
 
 **c. Deploy to Heroku as docker container**
