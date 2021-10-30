@@ -1,6 +1,20 @@
 ### How to use Heroku to host your python web app for free
 
-#### Background:
+<a id='toc'></a>
+<a id='toc'></a>
+## Table of Contents
+* [1. Background](#background)
+* [2. Preparation](#preparation)
+* [3. Deploy your Web app to Heroku](#deploy-app)
+  * [3.1 Deploy as a docker container to Heroku](#deploy-app-docker)
+  * [3.2 Deploy without docker container to Heroku](#deploy-app-nodocker)
+* [4. Test your Web app](#test-app)
+
+----
+
+<a id='background'></a>
+[back to TOC](#toc)
+### 1. Background:
 In the Machine Learning Zoomcamp course conducted by Alexey Grigorev (https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp) in Week/Session #5, it is required to deploy a web service which can accept user provided customer data and using a trained ML model, predict whether the customer will churn or not.
 
 For this, participants can either deploy the web service locally on their machine, inside a docker container on their machine, or in Cloud (AWS, Azure. Google etc.).
@@ -11,7 +25,11 @@ Following are the steps to use Heroku. These have been explained with an example
 
 *Thanks to Harshit for his video https://www.youtube.com/watch?v=1Z7nt0Fyits from where I learned the steps, and then some more reading from Heroku documentation.*
 
-#### 1. Create account in Heroku
+----
+<a id='preparation'></a>
+[back to TOC](#toc)
+### 1. Preparation
+#### 1.1 Create account in Heroku
 
 Go to https://www.heroku.com/ and Signup
 
@@ -25,7 +43,7 @@ Once logged in, you can deploy web app in any of the languages - Python, Ruby, P
 
 ![Heroku dashboard](images/3-heroku-dashboard.png)
 
-#### 2. Install Heroku command line interface (cli) on your machine
+#### 1.2. Install Heroku command line interface (cli) on your machine
 
 There are multiple ways to deploy a web app on Heroku (via the Heroku Dashboard, using CLI from your machine), of which I used the CLI option.
 
@@ -34,8 +52,6 @@ There are multiple options availabe to install Heroku cli - which can be found h
 **a. Download tarball**
 
 To install from tarball, go to https://devcenter.heroku.com/articles/heroku-cli#tarballs and download the tarball for the Operating system of your machine. I downloaded for Ubuntu.
-
-![Download tarball](images/4-heroku-download-tarball.png)
 
 **b. Extract tarball**
 
@@ -51,8 +67,30 @@ To add the heroku/bin path on a Linux machine, execute the below command. For Wi
 
 ![Add heroko to path](images/7-add-heroku-path.png)
 
-#### 3. Deploy your Web app to Heroku
+----
+[back to TOC](#toc)
+<a id='deploy-app'></a>
+### 3. Deploy your Web app to Heroku
+When using Heroku, you can deploy your Web app as a docker container to heroku, or you can deploy it without using docker. Following section explains both these options.
 
+[back to TOC](#toc)
+<a id='deploy-app-docker'></a>
+#### 3.1 Deploy as a docker container to Heroku
+To deploy your application to Heroku as a docker container, you need to first have docker installed and running on your machine.
+
+**Docker deployment content is work in progress ...**
+
+You can then follow the below simple steps to deploy to heroku as a docker container
+
+**a. Prepare code base for docker deployment**
+
+**b. Create Dockerfile**
+
+**c. Deploy to Heroku**
+
+[back to TOC](#toc)
+<a id='deploy-app-nodocker'></a>
+#### 3.2 Deploy without docker container to Heroku
 To deploy your Web app to Heroku, you need to have all your code in one place and create a few configuration files.
 
 **a. Prepare code base**
@@ -119,7 +157,7 @@ Commit changes to local git repo
   
 ![initial local git repo1](images/14-heroku-webapp-deploy-7.png)
 
-**Login to heroku** : Using heroku cli, login to heroku [In step 2.c. above the path has already been set]. Verify heroku command is found in the path then login. Press any key when asked to do so.
+**Login to heroku** : Using heroku cli, login to heroku (In step 2.c. above the path has already been set). Verify heroku command is found in the path then login. Press any key when asked to do so.
 
 ![initial local git repo2](images/15-heroku-webapp-deploy-8.png)
   
@@ -149,7 +187,10 @@ This creates an application and also a Heroku git repo for this application. You
   
 ![Default web page3](images/23-heroku-webapp-deploy-16.png)
 
-#### 4. Test your Web App  
+----
+[back to TOC](#toc)
+<a id='test-app'></a>
+### 4. Test your Web App  
 
 You can now test whether your Web App is running successfully (now being hosted on Heroku). From your local machine (or from anywhere, where you have python installed, requests package installed and having internet access) execute the code to test your Web App.
 
