@@ -5,7 +5,13 @@ Exercises performed as part of the ML Zoomcamp course. This course is conducted 
 * *https://datatalks.club/courses/2021-winter-ml-zoomcamp.html*
 * *https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp*
 
-This repo has the exercises I did and any notes I took as part of this course.
+This repo has the exercises I did and any notes I took as part of this course. I have also prepared some guides for deployment of python web app to PythonAnywhere, Heroku, docker containers using Google Cloud shell.
+
+## Guides
+
+* [How to use PythonAnywhere to deploy Python Web apps](./how-to-use-pythonanywhere.md)
+* [How to use Heroku](./how-to-use-heroku.md)
+* [How to use Google Cloud shell for docker](./how-to-use-google-cloud-shell-for-docker.md)
 
 ## Session #1
 
