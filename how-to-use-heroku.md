@@ -75,13 +75,18 @@ When using Heroku, you can deploy your Web app as a docker container to heroku, 
 [back to TOC](#toc)
 <a id='deploy-app-docker'></a>
 #### 3.1 Deploy as a docker container to Heroku
-To deploy your application to Heroku as a docker container, you need to first have docker installed and running on your machine.
 
-You can then follow the below simple steps to deploy to heroku as a docker container
+To be able to deploy to Heroku as a docker container, you need to first have docker installed and running. For this, you have 2 options:
+* 1. Use docker installed on your local machine
+* 2. Use Google Cloud shell which has docker pre-installed. Google Cloud shell provides a free machine if you have a Gmail account. 
+
+Steps to deploy your app to heroku as a docker container are explained below (including the slight difference for the 2 options mentioned above)
 
 **a. Prepare code base for docker deployment**
 
-Create a directory for your deployment and copy your code for the Web app, any ML model files (if/as appropriate), python package dependencies (this example shows use of pipenv and hence Pipfile and Pipfile.lock, however you can requirements.txt or files as applicable for you)
+Create a directory for your deployment and copy your code for the Web app, any ML model files (if/as appropriate), python package dependencies (this example shows use of pipenv and hence Pipfile and Pipfile.lock, however you can requirements.txt or files as applicable for you).
+
+> If you are using Google Cloud shell refer to guide in this [link](./how-to-use-google-cloud-shell-for-docker.md) to understand how to upload your files to Google Cloud shell
 
 ![Create directory and copy code](images/hd-1-code-base.png)
 
@@ -91,13 +96,15 @@ Create Dockerfile (filename should be exactly this) in the same directory with a
 
 Below example shows, python:3.8.12-slim being used as base image, installing pipenv, then copying the Pipfile and Pipfile.lock that specify python dependency packages, installing the dependency packages using pipenv, then copying the python code for the web app, followed by defining port to be exposed and entrypoint command that should get run when docker container starts.
 
-**Note:** One very important point I struggled and understood after a long time is that for gunicorn do not use anything like 
+**Note:** One very important point I struggled and understood after a long time is that you cannot map to a custom port in Heroku. Thus, for gunicorn, do not use anything like 
 
 ```ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:9696", "sample_app:app"]```
 
-Although using like this worked when running docker container locally on my machine, however failed when deployed to Heroku. Will try to investigate further and update once I know better. Meantime use something like
+but something like
 
 ```ENTRYPOINT ["gunicorn", "sample_app:app"]```
+
+Although using the first syntax worked when running docker container locally on my machine, it failed when deployed to Heroku - hence suggesting the second syntax. Will try to investigate further and update once I know better.
 
 ![Create Dockerfile](images/hd-2-dockerfile.png)
 
@@ -105,7 +112,10 @@ Although using like this worked when running docker container locally on my mach
 
 Run the following steps in sequence to deploy your web app as a docker container to Heroku.
 
-**Login to heroku** : Verify heroku command is found (In step 2.2.c. above the path has already been set) in the path. Then using heroku cli, login to heroku.  Press any key when asked to do so.
+If you are executing these steps from your local machine then follow steps in [Option A](#option-a) below. However if you are executing these steps from Google Cloud shell, then follow steps in [Option B](#option-b) below.
+
+<a id='option-a'></a>
+**Option A: Login to heroku from your machine** : Verify heroku command is found (In step 2.2.c. above the path has already been set) in the path. Then using heroku cli, login to heroku.  Press any key when asked to do so.
 
 ```which heroku```
 
@@ -123,6 +133,26 @@ Now you can close this tab and return to the command prompt on your terminal
   
 ![initial local git repo5](images/18-heroku-webapp-deploy-11.png)
 
+You can skip Option B below and continue with steps provided in [Login to Heroku container](#login-heroku-container)
+
+<a id='option-b'></a>
+**Option B: Login to heroku from Google Cloud shell**  : From your web browser, login to Heroko and go to **Account settings**. On the Account setting screen, go to **Applications** tab and under **Authorizations** click **Create authorization**
+
+![Goto heroku auth](images/heroku-1-auth.png)
+
+Provide some name for the authorization and optionally set expiration time and create authorization (This will create an API key which can be used to login to Heroku from Google Cloud shell)
+
+![Create heroku auth](images/heroku-2-create-auth.png)
+
+[!Auth token generated](images/heroku-3-auth-token-generated.png)
+
+Copy the generated token (i.e. API key) and go to your Google Cloud shell prompt. Here, define and export a variable named HEROKU_API_KEY with value as the key you copied. Example command shown below (Please not there should not be any space before or after the =, and the key should be enclosed in ")
+
+```export HEROKU_API_KEY="8fb57c22-c44e-4dd5-b5d7-6315705b7bbe"```
+
+[!Define API Key var](images/heroku-4-gcp-set-heroku-auth-var.png)
+
+<a id='login-heroku-container'></a>
 **Login to Heroku container**  : Login to Heroku container registry.
 
 ```heroku container:login```
