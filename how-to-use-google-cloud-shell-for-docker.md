@@ -102,13 +102,35 @@ Now, build docker image. Below command will create a docker image with name my-i
 
 ![Build docker image](images/gcp-7-local-build-docker-image.png)
 
+**Deploy docker container**
+Now deploy your app as a docker container using the image that you built. Below command will launch a docker container, will delete when it is stopped (--rm flag), run it as a daemon (i.e. background process, the -d flag(, mapping port 8080 of the Cloud shell to port 9696 of container (since in Dockerfile we have exposed port 9696 of container and the gunicorn is running the app on port 9696), from image my-image.
+
+```docker run --rm -d -p 8080:9696 my-image```
+
+Check whether container is running
+
+```docker ps -a```
+
+![Deploy container locally](images/gcp-8-local-deploy-container.png)
+
+**Access your app**
+Now you can access you app. If you can interact with you app from command line you can do so as shown below from the command prompt itself
+
+```curl localhost:8080```
+
+![Test app 1](images/gcp-9-local-test-app.png)
+
+If you want to access the app from your web browser, then click on the **Web preview** option and click **Preview on port 8080**. If instead of port 8080 on Cloud shell, you had mapped to a different port, then use the option **Change port** under Web Preview to change port and access you application from web browser.
+
+![Web preview default](images/gcp-9-local-web-preview-default.png)
+
+![Web preview custom](images/gcp-9-local-web-preview-custom.png)
+
+That completes the procedure for deploying app in a docker container in Google Cloud shell.
+
 #### 3.3 Deploy docker container on Heroku
 
-You can also setup Google authenticator app on your mobile to get a token (OTP) and use it for Multi-factor authentication when logging in to Heroku.
-
-Once logged in, you can deploy web app in any of the languages - Python, Ruby, PHP, Node.js, Java, Go, Closure, Scala
-
-![Heroku dashboard](images/3-heroku-dashboard.png)
+**Open Heroku account**
 
 #### 2.2. Install Heroku command line interface (cli) on your machine
 
