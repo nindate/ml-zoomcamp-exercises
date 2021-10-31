@@ -77,8 +77,6 @@ When using Heroku, you can deploy your Web app as a docker container to heroku, 
 #### 3.1 Deploy as a docker container to Heroku
 To deploy your application to Heroku as a docker container, you need to first have docker installed and running on your machine.
 
-**Docker deployment content is work in progress ...**
-
 You can then follow the below simple steps to deploy to heroku as a docker container
 
 **a. Prepare code base for docker deployment**
