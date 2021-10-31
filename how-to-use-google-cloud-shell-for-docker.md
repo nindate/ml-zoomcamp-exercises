@@ -5,17 +5,13 @@ If you do not have docker installed on your local machine, but you want to use d
 **Note:** This method is useful only for exploration/practise/testing purpose and since Google Cloud shell resets after inactivity it also deletes all docker images, containers etc. So do not use this to store critical data, but only for quick projects, temporary deployment etc.
 
 <a id='toc'></a>
-<a id='toc'></a>
 ## Table of Contents
 * [1. Background](#background)
 * [2. Use docker in Google Cloud shell](#gcp-cloud-shell-docker)
-* [3. Deploy your app in docker container](#deploy-container)
-  * [3.1 Prepare for app deployment](#gcp-prepare-deployment)
-  * [3.2 Deploy docker container within Google Cloud shell](#gcp-local-container)
-  * [3.3 Deploy docker container on Heroku](#gcp-heroku-container)
+* [3. Deploy app to docker container within Google Cloud shell](#gcp-local-container)
+* [4. Deploy docker container on Heroku](#gcp-heroku-container)
 
 ----
-
 <a id='background'></a>
 [back to TOC](#toc)
 ### 1. Background:
@@ -50,17 +46,14 @@ The only pre-requisite for the method suggested in this guide is to have a Gmail
 
 You can now use this Docker setup to download images, build your own docker images, launch containers etc. 
 
-<a id='deploy-container'></a>
+---
+<a id='gcp-local-container'></a>
 [back to TOC](#toc)
-### 3. Deploy your app in docker container
+### 3. Deploy app to docker container within Google Cloud shell
 
 Now you can deploy your app in a docker container. Below I have explained 2 options - 1. Deploy your app as docker container within Google Cloud shell, 2. Deploy your app as docker container to Heroku. You can choose to use any of these.
 
-<a id='gcp-prepare-deployment'></a>
-#### 3.1 Prepare for app deployment
-Before you can deploy your app to a docker container, first prepare a folder for deployment and collect all the necessary files into the folder.
-
-I will explain a scenario where suppose you have developed your application in let's say python on your machine, and now you want to deploy in a docker container.
+Before you can deploy your app to a docker container, first prepare a folder for deployment and collect all the necessary files into the folder. I will explain with a scenario where suppose you have developed your application in let's say python on your machine, and now you want to deploy in a docker container.
 
 **Upload files**
 You can upload your application code, machine learning models, any python package dependencies management files (like requirements.txt or Pipfile and Pipefile.lock etc.) etc. from your local machine to Google Cloud shell. For this click on the 3 dots and click Upload.
@@ -81,9 +74,6 @@ Now, create a directory where you will keep all the files to be deployed into th
 
 ![Create deployment directory](images/gcp-5-deployment-dir.png)
 
-
-<a id='gcp-local-container'></a>
-#### 3.2 Deploy docker container within Google Cloud shell
 
 Let us see how to deploy you app to a docker container and access the application. 
 
@@ -128,6 +118,9 @@ If you want to access the app from your web browser, then click on the **Web pre
 
 That completes the procedure for deploying app in a docker container in Google Cloud shell.
 
-#### 3.3 Deploy docker container on Heroku
+---
+<a id='gcp-heroku-container'></a>
+[back to TOC](#toc)
+### 4. Deploy docker container on Heroku
 
-To deploy your app as docker container to Heroku, follow document at this ![link](./how-to-use-heroku.md)
+To deploy your app as docker container to Heroku, after having completed steps 1. and 2. in this guide, follow guide at this [link](./how-to-use-heroku.md)
