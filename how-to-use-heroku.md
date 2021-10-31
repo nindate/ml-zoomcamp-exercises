@@ -112,7 +112,7 @@ Although using the first syntax worked when running docker container locally on 
 
 Run the following steps in sequence to deploy your web app as a docker container to Heroku.
 
-If you are executing these steps from your local machine then follow steps in [Option A](#option-a) below. However if you are executing these steps from Google Cloud shell, then follow steps in [Option B](#option-b) below.
+If you are executing these steps from your local machine then follow steps in [Option A](#option-a) below. However if you are executing these steps from Google Cloud shell, then follow steps in [Option B](#option-b) below. The difference is due to the fact that the step to login from your local machine will open a web browser where you can login to Heroku providing credentials. Whereas from Google Cloud shell, the web browser tab cannot be opened for you to login. Hence for the Google Cloud shell scenario, we will use API key from Heroku. 
 
 <a id='option-a'></a>
 **Option A: Login to heroku from your machine** : Verify heroku command is found (In step 2.2.c. above the path has already been set) in the path. Then using heroku cli, login to heroku.  Press any key when asked to do so.
@@ -144,13 +144,13 @@ Provide some name for the authorization and optionally set expiration time and c
 
 ![Create heroku auth](images/heroku-2-create-auth.png)
 
-[!Auth token generated](images/heroku-3-auth-token-generated.png)
+![Auth token generated](images/heroku-3-auth-token-generated.png)
 
-Copy the generated token (i.e. API key) and go to your Google Cloud shell prompt. Here, define and export a variable named HEROKU_API_KEY with value as the key you copied. Example command shown below (Please not there should not be any space before or after the =, and the key should be enclosed in ")
+Copy the generated token (i.e. API key) and go to your Google Cloud shell prompt. Here, define and export a variable named HEROKU_API_KEY with value as the key you copied. Example command shown below (Please note there should not be any space before or after the =, and the key should be enclosed in ")
 
 ```export HEROKU_API_KEY="8fb57c22-c44e-4dd5-b5d7-6315705b7bbe"```
 
-[!Define API Key var](images/heroku-4-gcp-set-heroku-auth-var.png)
+![Define API Key var](images/heroku-4-gcp-set-heroku-auth-var.png)
 
 <a id='login-heroku-container'></a>
 **Login to Heroku container**  : Login to Heroku container registry.
