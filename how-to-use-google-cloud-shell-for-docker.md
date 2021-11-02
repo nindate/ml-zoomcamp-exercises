@@ -104,11 +104,55 @@ Check whether container is running
 ![Deploy container locally](images/gcp-8-local-deploy-container.png)
 
 **Access your app**
-Now you can access you app. If you can interact with you app from command line you can do so as shown below from the command prompt itself
+Now you can access you app. If you can interact with you app from command line you can do so as shown below from the command prompt itself.
+
+e.g. to make a GET request you can simply use something like below
 
 ```curl localhost:8080```
 
 ![Test app 1](images/gcp-9-local-test-app.png)
+
+However, if you want to make a POST request, although it can be done using curl, I would prefer you write a small python script to send the request. Sample python script shown below. (I am yet to figure out how to make this work with curl. When I do so, will update here). 
+
+Sample python script named request.py
+```
+import requests
+
+url = 'http://localhost:8080/predict'
+
+#Put your json containing employee info that intend to send to your web append
+data = {
+ 'gender': 'Female',
+ 'SeniorCitizen': 0,
+ 'Partner': 'Yes',
+ 'Dependents': 'No',
+ 'tenure': 1,
+ 'PhoneService': 'No',
+ 'MultipleLines': 'No phone service',
+ 'InternetService': 'DSL',
+ 'OnlineSecurity': 'No',
+ 'OnlineBackup': 'Yes',
+ 'DeviceProtection': 'No',
+ 'TechSupport': 'No',
+ 'StreamingTV': 'No',
+ 'StreamingMovies': 'No',
+ 'Contract': 'Month-to-month',
+ 'PaperlessBilling': 'Yes',
+ 'PaymentMethod': 'Electronic check',
+ 'MonthlyCharges': 29.85,
+ 'TotalCharges': '29.85',
+}
+
+response = requests.post(url,json=data).json()
+print(response)
+```
+
+Now you can test simply by running your python script
+
+```python request.py```
+
+![Sample python request script executed](images/gcp-b-python-run-request-script.png)
+
 
 If you want to access the app from your web browser, then click on the **Web preview** option and click **Preview on port 8080**. If instead of port 8080 on Cloud shell, you had mapped to a different port, then use the option **Change port** under Web Preview to change port and access you application from web browser.
 
