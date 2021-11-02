@@ -152,6 +152,14 @@ Copy the generated token (i.e. API key) and go to your Google Cloud shell prompt
 
 ![Define API Key var](images/heroku-4-gcp-set-heroku-auth-var.png)
 
+Run the following steps to add Google DNS server entry to a file /etc/resolv.conf (I had to do this to be able to connect to Heroku container registry from within Google cloud shell).
+
+```
+$ echo "nameserver 8.8.8.8" > /tmp/1
+$ cat /etc/resolv.conf >> /tmp/1
+$ sudo cp /tmp/1 /etc/resolv.conf
+```
+
 <a id='login-heroku-container'></a>
 **Login to Heroku container**  : Login to Heroku container registry.
 
