@@ -3,6 +3,7 @@
 * [2. Ubuntu 20.04](#ubuntu-18-04)
 * [3. CentOS 7](#centos-7)
 * [4. Amazon linux](#amazon-linux)
+* [5. Windows](#windows)
 
 
 <a id='ubuntu-20-04'></a>
@@ -159,3 +160,8 @@ If using Amazon Linux run below command
 5. Set permissions for user to use docker commands
 
 ```sudo usermod -a -G docker ec2-user```
+
+
+<a id='windows'></a>
+### 5. Install docker on Windows
+Follow the steps provided [here](https://docs.docker.com/desktop/windows/install/) to install Docker Desktop on Windows
